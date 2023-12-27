@@ -1,7 +1,3 @@
-<?php
-include "db_conn.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +22,9 @@ include "db_conn.php";
 
   <div class="container">
     <?php
+    // Include the database connection file
+    include "db_conn.php";
+
     if (isset($_GET["msg"])) {
       $msg = $_GET["msg"];
       echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
